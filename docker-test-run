@@ -1,0 +1,4 @@
+docker run -w /home/beamuser/beam --env MAXRAM=10g --cidfile beam_id.cid --name BeamRun beam ./gradlew -a :run -PappArgs="['--config', 'test/input/beamville/beam.conf']"
+id=$( cat beam_id.cid )
+rm beam_id.cid
+docker cp $id:/home/beamuser/beam/output .
