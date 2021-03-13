@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+if [ "$#" -ne 1 ]; then
+    echo "You must enter exactly 1 command line arguments"
+    echo "Enter your local network ip address concatenated with :0.0"
+    echo "For example, 192.168.1.68:0.0"
+fi
+ip=$1
+
+docker run --rm -i -t --net=host -e DISPLAY'$ip --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --mount source=JOSMVolume,target=/JOSMVolume --mount source=JOSMUserData,target=/root/.local/share/JOSM --mount source=JOSMPrefData,target=/root/.config/JOSM --mount source=JOSMCacheData,target=/root/.cache/JOSM beamconvtoolsjosm java -jar /home/beamuser/JOSM/josm-tested.jar

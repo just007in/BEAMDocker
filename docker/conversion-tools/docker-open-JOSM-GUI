@@ -1,0 +1,1 @@
+docker run --rm -i -t --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" --mount source=JOSMVolume,target=/JOSMVolume --mount source=JOSMUserData,target=/root/.local/share/JOSM --mount source=JOSMPrefData,target=/root/.config/JOSM --mount source=JOSMCacheData,target=/root/.cache/JOSM beamconvtoolsjosm java -jar /home/beamuser/JOSM/josm-tested.jar

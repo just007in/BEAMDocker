@@ -1,0 +1,2 @@
+FROM beamconvtools
+RUN apt install -y openjfx openjdk-11-jdk x11-apps

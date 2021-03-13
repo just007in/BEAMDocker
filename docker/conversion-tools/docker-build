@@ -1,0 +1,2 @@
+docker build . --rm --tag beamconvtools
+docker build -f Dockerfile-JOSM --rm --tag beamconvtoolsjosm .
