@@ -12,19 +12,21 @@ JOSM: latest tested jar is downloaded.<br />
 MatSim: MatSim 12.0 release is downloaded.<br /> 
 Osmosis: Osmosis 48.3 release is downloaded.<br />
 
+### JOSM
 JOSM is run through a GUI. A docker container is not necessarily needed to run JOSM since you just have to execute a jar file, but one is provided anyways.<br />
 To run JOSM, launch the docker-open-JOSM-GUI script. If you are using Windows, you need to install VeXsrv Windows X Server. Then, launch the docker-open-JOSM-GUI-Windows script.<br />
 JOSM's data can be saved to an external docker volume. Then, the data can be accessed in the docker volume with the export-JOSM-data script.<br />
 The location of this volume is /JOSMVolume. Ensure that any data you want to save is saved to *THIS* folder or else the export script will not get any of your data.<br />
+The export script moves the contents of /JOSMVolume to the folder JOSM in your current working directory. *NOTE* That the files are *NOT* copied but moved. <br />
 
-
-###### BEAM-related: <br />
+## Overview of Most Files
+##### BEAM-related: <br />
 
 beam-test-run: This script runs the gradle wrapper with the Beamville scenario and copies the output folder to host working directory.<br />
 MatSimConversion/convert: This script converts the provided MatSim Scenario and related files to a BEAM Scenario
 
 
-###### Docker-related:<br />
+##### Docker-related:<br />
 ###### BEAM
 docker/beam/Dockerfile: This is the docker build script that docker uses.<br />
 docker/beam/docker-build: This script builds the docker image based on Dockerfile.<br />
@@ -39,6 +41,6 @@ docker/conversion-tools/docker-open-JOSM-GUI: This opens up JOSM's GUI and mount
 docker/conversion-tools/docker-open-JOSM-GUI-Windows: This opens up JOSM's GUI and mounts the current external directory on Windows.<br />
 docker/conversion-tools/export-JOSM-data: This exports data in the JOSMVolume Docker Volume
 
-###### General
+##### General
 docker/remove-container: This script removes ALL docker containers. *USE WITH CAUTION*<br />
 docker/purge-docker: This script removes ALL docker containers and ALL docker images. *USE WITH CAUTION*<br />
