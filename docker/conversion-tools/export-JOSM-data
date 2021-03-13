@@ -1,0 +1,10 @@
+#Can just access volume from host directly
+#inspect volume
+docker run -d --rm --mount source=JOSMVolume,target=/myvolume --name josmexport -t beamconvtoolsjosm
+#id=$( cat josm_id.cid )
+#--cidfile josm_id.cid
+docker exec -d josmexport sh -c "mkdir /JOSM && mv /myvolume/* /JOSM"
+#rm josm_id.cid
+docker cp josmexport:/JOSM .
+docker container kill josmexport
+#docker rm $id
