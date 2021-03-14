@@ -1,3 +1,3 @@
-docker run -w /home/beamuser/beam --env MAXRAM=10g --name BeamRun beam ./gradlew -a :run -PappArgs="['--config', 'test/input/beamville/beam.conf']"
+docker run -w /home/beamuser/beam --env MAXRAM=4g --name BeamRun beam ./gradlew -a :run -PappArgs="['--config', 'test/input/beamville/beam.conf']"
 docker cp BeamRun:/home/beamuser/beam/output .
 docker rm BeamRun

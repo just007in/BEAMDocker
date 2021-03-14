@@ -11,6 +11,6 @@ RUN pip3 install numpy pandas cython sklearn matplotlib mapclassify descartes ge
 RUN useradd -m -p beam -s /bin/bash beamuser
 RUN usermod -aG sudo beamuser
 
-RUN cd /home/beamuser && git clone https://github.com/LBNL-UCB-STI/beam.git && cd beam && export MAXRAM=10g && ./gradlew :run -PappArgs="['--config', 'test/input/beamville/beam.conf']"
+RUN cd /home/beamuser && git clone https://github.com/LBNL-UCB-STI/beam.git && cd beam && export MAXRAM=4g && ./gradlew :run -PappArgs="['--config', 'test/input/beamville/beam.conf']"
 
 
