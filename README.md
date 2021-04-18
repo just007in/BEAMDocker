@@ -29,12 +29,13 @@ These files would not be generated since information in these files are not in t
 ### MatSim Conversion Considerations
 <details> <summary>Changes to the provided MatSimConversion/skeleton.conf file</summary>
 <p>The provided skeleton.conf file had changes to create a very basic BEAM scenario.</p> 
-**Mode Choice Algorithm**
-<p>
+
+**Mode Choice Algorithm** <br />
 beam.agentsim.agents.modalBehaviors.modeChoiceClass was set to "ModeChoiceDriveIfAvailable"<br />
-According to the documentation, the beam.agentsim.agents.modalBehaviors.lccm.filePath should be ignored but just to be safe, this parameter was removed.
-</p>
+According to the documentation, the beam.agentsim.agents.modalBehaviors.lccm.filePath should be ignored but just to be safe, this parameter was removed. <br />
+
 **Other Removed Parameters** <br />
+
 - beam.agentsim.agents.modeIncentive.filePath<br />
 - beam.agentsim.agents.ptFare.filePath <br />
 - beam.agentsim.agents.vehicles.linkToGradePercentFilePath <br />
@@ -43,24 +44,23 @@ According to the documentation, the beam.agentsim.agents.modalBehaviors.lccm.fil
 - beam.agentsim.taz.parkingFilePath <br />
 
 **RideHail Fleet** <br />
-<p>
-- beam.agentsim.agents.rideHail.initialization.initType was set to “FILE”.
-    This requires beam.agentsim.agents.rideHail.initialization.filePath to be valid. The filename is rideHailFleet.csv. This can be set to a table with no entries. <br />
 
+- beam.agentsim.agents.rideHail.initialization.initType was set to “FILE”. <br />
+    - This requires beam.agentsim.agents.rideHail.initialization.filePath to be valid. The filename is rideHailFleet.csv. This can be set to a table with no entries. <br />
 - beam.agentsim.agents.rideHail.initialization.procedural.vehicleTypeId was set to “CAR”<br />
 - beam.agentsim.agents.rideHail.initialization.procedural.fractionOfInitialVehicleFleet was set to 0.0
-</p>
+
 **Beam Spatial**
-<p>
+
 - The localCRS in beam.spatial was set to epsg:3857<br />
 
-- Beam.routing r5 mNetBuilder.toCRS was set to ${beam.spatial.localCRS} 
-</p>
+- Beam.routing r5 mNetBuilder.toCRS was set to ${beam.spatial.localCRS} <br />
+
 **Shapefile**
 <p>A shapefile using the matsim.conversion.shapeConfig.shapeFile parameter was not specified. The matsim.conversion.shapeConfig.tazIdFieldName was not specified.</p>
 
 **Benchmark file**
-<p>The benchmark file was set so only driving cars was set. This was done by setting everything to 0 except for cars. Not sure why this is required.</p>
+<p>The benchmark file was set so only driving cars was set. This was done by setting everything to 0 except for cars. </p>
 
 **Vehicle Types** <br />
 Since the MatSim conversion program outputs vehicle types with missing columns, a python script using pandas was used to add the necessary columns to the csv file. A program like Excel can also be used. <br />
@@ -71,6 +71,7 @@ The additional columns include:<br />
 - monetaryCostPerSecond<br />
 - sampleProbabilityWithinCategory<br />
 - chargingCapability<br />
+
 The vehicleCategory column was modified. Passenger vehicles were set to Car. Public transportation vehicles are set to MediumDutyPassenger. A person walking is set to Body.<br />
 
 The row for the vehicle body type was also added.<br />
