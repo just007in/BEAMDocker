@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE network SYSTEM "http://www.matsim.org/files/dtd/network_v2.dtd">
+<network>
+
+<!-- ====================================================================== -->
+
+	<nodes>
+		<node id="1357752785" x="-86.68945760000001" y="40.2434627" >
+		</node>
+		<node id="1357752830" x="-86.702815" y="40.2556021" >
+		</node>
+		<node id="1357752831" x="-86.7025682" y="40.2553852" >
+		</node>
+		<node id="1357752833" x="-86.6990524" y="40.2521603" >
+		</node>
+		<node id="1357752837" x="-86.7023008" y="40.2554314" >
+		</node>
+		<node id="1357752839" x="-86.69576550000001" y="40.249203" >
+		</node>
+		<node id="1357752841" x="-86.7026399" y="40.2557546" >
+		</node>
+		<node id="1357776661" x="-86.7102478" y="40.262168800000005" >
+		</node>
+		<node id="1357776665" x="-86.7191613" y="40.2701363" >
+		</node>
+		<node id="1357776666" x="-86.7219682" y="40.2726838" >
+		</node>
+		<node id="1357776671" x="-86.70568" y="40.2581679" >
+		</node>
+		<node id="1357776673" x="-86.7142593" y="40.2657569" >
+		</node>
+		<node id="1357776686" x="-86.7328932" y="40.282893" >
+		</node>
+		<node id="179060005" x="-86.6891744" y="40.2434391" >
+		</node>
+		<node id="3295893161" x="-86.7352018" y="40.2860996" >
+		</node>
+		<node id="3295893177" x="-86.7361969" y="40.2872912" >
+		</node>
+		<node id="37986378" x="-86.73503840000001" y="40.2861721" >
+		</node>
+		<node id="37991414" x="-86.6956082" y="40.2493035" >
+		</node>
+		<node id="37992407" x="-86.7140796" y="40.2658748" >
+		</node>
+		<node id="37993365" x="-86.69995810000002" y="40.2532703" >
+		</node>
+		<node id="37993394" x="-86.6992331" y="40.2526052" >
+		</node>
+		<node id="37998689" x="-86.7098801" y="40.2621482" >
+		</node>
+		<node id="38007256" x="-86.7054874" y="40.258248300000005" >
+		</node>
+		<node id="38014830" x="-86.6988717" y="40.2522826" >
+		</node>
+		<node id="38036038" x="-86.7190374" y="40.2702507" >
+		</node>
+		<node id="38036044" x="-86.7216748" y="40.2726864" >
+		</node>
+		<node id="38036054" x="-86.7326936" y="40.2829755" >
+		</node>
+		<node id="38036071" x="-86.7359699" y="40.2872896" >
+		</node>
+		<node id="6840946733" x="-86.701035" y="40.2540002" >
+		</node>
+		<node id="6840946734" x="-86.7008645" y="40.2541064" >
+		</node>
+		<node id="7001687713" x="-86.7345042" y="40.2851513" >
+		</node>
+		<node id="7010994202" x="-86.7377569" y="40.2892032" >
+		</node>
+		<node id="7010994208" x="-86.7379036" y="40.28911360000001" >
+		</node>
+		<node id="7150473441" x="-86.7153389" y="40.266716" >
+		</node>
+		<node id="7886622668" x="-86.7362052" y="40.2875416" >
+		</node>
+		<node id="7999605047" x="-86.69743000000001" y="40.2507201" >
+		</node>
+		<node id="7999605057" x="-86.6971643" y="40.2504843" >
+		</node>
+		<node id="7999605058" x="-86.6969815" y="40.2505851" >
+		</node>
+		<node id="8049043565" x="-86.7467827" y="40.2977001" >
+		</node>
+		<node id="8049043566" x="-86.7469243" y="40.2976045" >
+		</node>
+		<node id="8049118989" x="-86.7286177" y="40.2787866" >
+		</node>
+		<node id="8049118993" x="-86.7290462" y="40.2788964" >
+		</node>
+		<node id="8049118994" x="-86.7288625" y="40.2790117" >
+		</node>
+		<node id="8050289073" x="-86.7263757" y="40.2767653" >
+		</node>
+		<node id="8050311589" x="-86.7303966" y="40.2801406" >
+		</node>
+		<node id="8084367982" x="-86.7340328" y="40.284809" >
+		</node>
+		<node id="8084367994" x="-86.7336233" y="40.285456100000005" >
+		</node>
+		<node id="8084367995" x="-86.7342124" y="40.284741000000004" >
+		</node>
+	</nodes>
+
+<!-- ====================================================================== -->
+
+	<links capperiod="01:00:00" effectivecellsize="7.5" effectivelanewidth="3.75">
+		<link id="113030885_0" from="38007256" to="37998689" length="572.469116786751" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="113030885_1" from="37998689" to="37992407" length="547.1278476323964" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121236997_0" from="1357752831" to="6840946733" length="201.83470433678514" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121236997_1" from="6840946733" to="1357752833" length="265.20196989642056" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121236999_0" from="1357752841" to="38007256" length="368.2103929193101" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121237002_0" from="1357752837" to="1357752841" length="46.09095940941402" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121237004_0" from="1357752830" to="1357752831" length="31.978258277564095" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121237010_0" from="179060005" to="37991414" length="851.4788127316644" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121237010_1" from="37991414" to="7999605058" length="184.30395984213732" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121237010_2" from="7999605058" to="38014830" length="248.09539923214433" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121238322_9" from="1357776665" to="38036038" length="16.52052830109326" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="121238322_9_r" from="38036038" to="1357776665" length="16.52052830109326" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239876_0" from="37986378" to="38036071" length="147.49605715337916" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239876_1" from="38036071" to="7886622668" length="34.44081877496722" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239876_2" from="7886622668" to="7010994202" length="227.10019112375915" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_0" from="3295893161" to="7001687713" length="121.04975612468891" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_1" from="7001687713" to="8084367995" length="51.96450948416671" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_2" from="8084367995" to="1357776686" length="234.24473988698978" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_3" from="1357776686" to="8050311589" length="373.05554050065956" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_4" from="8050311589" to="8049118993" length="179.82387117442354" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_5" from="8049118993" to="1357776666" length="916.3920772142568" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_6" from="1357776666" to="1357776665" length="370.526939919908" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_7" from="1357776665" to="7150473441" length="500.3840652190898" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_8" from="7150473441" to="1357776673" length="140.74321775401137" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239877_9" from="1357776673" to="1357776661" length="525.0297803926711" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="121239878_0" from="1357776671" to="1357752830" length="375.26134267237546" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="128254192_0" from="1357752833" to="38014830" length="20.519323989764473" freespeed="22.22222222222222" capacity="1500.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="128254192_0_r" from="38014830" to="1357752833" length="20.519323989764473" freespeed="22.22222222222222" capacity="1500.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="128254203_0" from="1357752833" to="7999605047" length="211.43141877652468" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="128254203_1" from="7999605047" to="7999605057" length="34.62108538661665" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="128254203_2" from="7999605057" to="1357752839" length="185.65782135182877" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="128254203_3" from="1357752839" to="1357752785" length="834.0202318704742" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="177230069_4" from="179060005" to="1357752785" length="24.20673371514838" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="177230069_4_r" from="1357752785" to="179060005" length="24.20673371514838" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="322793804_1" from="8049043566" to="7010994208" length="1216.9464701801458" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="322793804_2" from="7010994208" to="3295893177" length="249.31629353906254" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="322793804_3" from="3295893177" to="3295893161" length="157.35315621700187" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5328912_0" from="3295893161" to="37986378" length="16.05193448181305" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5328912_0_r" from="37986378" to="3295893161" length="16.05193448181305" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5329385_0" from="1357752839" to="37991414" length="17.429277938195938" freespeed="12.5" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5329385_0_r" from="37991414" to="1357752839" length="17.429277938195938" freespeed="12.5" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5329505_0" from="1357776673" to="37992407" length="20.130839260060327" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5329505_0_r" from="37992407" to="1357776673" length="20.130839260060327" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5330961_0" from="38007256" to="1357776671" length="18.64975243681881" freespeed="16.666666666666668" capacity="1000.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5330961_0_r" from="1357776671" to="38007256" length="18.64975243681881" freespeed="16.666666666666668" capacity="1000.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334048_0" from="38014830" to="37993394" length="47.2483610478114" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334048_1" from="37993394" to="37993365" length="96.31037223150918" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334048_2" from="37993365" to="6840946734" length="120.80036324945999" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334048_3" from="6840946734" to="1357752837" length="191.42996298771584" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_0" from="37992407" to="38036038" length="643.9223027432774" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_1" from="38036038" to="38036044" length="351.71259909736256" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_2" from="38036044" to="8050289073" length="604.629819438213" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_3" from="8050289073" to="8049118989" length="294.77933958508567" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_4" from="8049118989" to="8049118994" length="32.559594823687256" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_5" from="8049118994" to="38036054" length="549.0584714772849" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_6" from="38036054" to="8084367982" length="233.65646324996538" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334057_7" from="8084367982" to="37986378" length="174.12073868724883" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334980_0" from="38036054" to="1357776686" length="19.27837062459144" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5334980_0_r" from="1357776686" to="38036054" length="19.27837062459144" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5335152_4" from="3295893177" to="38036071" length="19.276713877577972" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5335152_4_r" from="38036071" to="3295893177" length="19.276713877577972" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5335317_7" from="38036044" to="1357776666" length="24.92136490922548" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="5335317_7_r" from="1357776666" to="38036044" length="24.92136490922548" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="730226342_0" from="6840946733" to="6840946734" length="18.697209291180204" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="730226342_0_r" from="6840946734" to="6840946733" length="18.697209291180204" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="749743875_0" from="7010994208" to="7010994202" length="15.957982900056953" freespeed="13.88888888888889" capacity="1500.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="749743875_0_r" from="7010994202" to="7010994208" length="15.957982900056953" freespeed="13.88888888888889" capacity="1500.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="749743877_0" from="7010994202" to="8049043565" length="1217.7441982107748" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="831744454_0" from="1357776661" to="37998689" length="31.319219167546635" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="831744454_0_r" from="37998689" to="1357776661" length="31.319219167546635" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="831744455_0" from="1357776661" to="1357776671" length="590.7124371909189" freespeed="22.22222222222222" capacity="4000.0" permlanes="2.0" oneway="1" modes="car" >
+		</link>
+		<link id="864017704_0" from="8049043565" to="8049043566" length="16.055820916499407" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="864017704_0_r" from="8049043566" to="8049043565" length="16.055820916499407" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="864024553_0" from="8049118993" to="8049118994" length="20.202244798712133" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="864024553_0_r" from="8049118994" to="8049118993" length="20.202244798712133" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="867278625_0" from="8084367982" to="8084367994" length="116.90287089701141" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+		<link id="867278625_0_r" from="8084367994" to="8084367982" length="116.90287089701141" freespeed="4.166666666666667" capacity="300.0" permlanes="1.0" oneway="1" modes="car" >
+		</link>
+	</links>
+
+<!-- ====================================================================== -->
+
+</network>

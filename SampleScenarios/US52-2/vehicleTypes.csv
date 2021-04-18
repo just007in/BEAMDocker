@@ -1,0 +1,9 @@
+vehicleTypeId,seatingCapacity,standingRoomCapacity,lengthInMeter,primaryFuelType,primaryFuelConsumptionInJoulePerMeter,primaryFuelCapacityInJoule,primaryVehicleEnergyFile,secondaryFuelType,secondaryFuelConsumptionInJoulePerMeter,secondaryFuelCapacityInJoule,secondaryVehicleEnergyFile,automationLevel,maxVelocity,passengerCarUnit,rechargeLevel2RateLimitInWatts,rechargeLevel3RateLimitInWatts,vehicleCategory,monetaryCostPerMeter,monetaryCostPerSecond,sampleProbabilityWithinCategory,chargingCapability
+BODY-TYPE-DEFAULT,0,0,0.5,Food,53,2210000,,,,,,1,,,,,Body,,,,
+CAR,1,0,4.5,gasoline,3655.98,3655980000,,,,,,,,,,,Car,,,,
+SUV,1,0,5.5,gasoline,3655.98,3655980000,,,,,,,,,,,Car,,,,
+BUS-DEFAULT,50,50,12,diesel,20048,30000000000,,,,,,,,,,,MediumDutyPassenger,,,,
+SUBWAY-DEFAULT,50,50,12,electricity,46800,46800000000,,,,,,,,,,,MediumDutyPassenger,,,,
+TRAM-DEFAULT,50,50,7.5,electricity,3600,3600000000,,,,,,,,,,,MediumDutyPassenger,,,,
+RAIL-DEFAULT,50,50,7.5,diesel,210518,600000000000,,,,,,,,,,,MediumDutyPassenger,,,,
+CABLE_CAR-DEFAULT,50,50,7.5,electricity,1116,1116000000,,,,,,,,,,,MediumDutyPassenger,,,,
