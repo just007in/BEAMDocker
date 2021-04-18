@@ -16,6 +16,7 @@ MatSim to BEAM conversion tool: Included with BEAM installation.<br />
 Other helpful tools: osmconvert to convert a .osm to .osm.pbf file.<br />
 
 ### Steps to Convert a MatSim scenario to a basic BEAM scenario
+Please read the documentation on BEAM's official documentation for more information: https://beam.readthedocs.io/en/latest/users.html#converting-a-matsim-scenario-to-run-with-beam <br />
 Step 4 is if the more advanced parameters and files were not created specifically for BEAM.<br />
 These files would not be generated since information in these files are not in the MatSim Scenario.<br />
 
