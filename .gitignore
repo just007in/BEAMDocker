@@ -1,3 +1,7 @@
 output/
 docker/conversion-tools/JOSM
 test/
+**/.idea
+OutputProcessing/softlink/trips_data
+OutputProcessing/softlink/*.gz
+OutputProcessing/softlink/*.csv

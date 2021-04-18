@@ -106,6 +106,9 @@ MatSimConversion/convert: This script does a rudimentary conversion using the Ma
 MatSimConversion/genpopulation.py: This script does a basic generation of a MatSim population.xml (plans.xml) file for a MatSim scenario.<br />
 MatSimConversion/vehicleTypes.csv: This file contains the correct format for a vehicleTypes file for a BEAM scenario.<br />
 
+##### OutputProcessing <br />
+OutputProcessing/softlink: Folder that contains scripts for output processing. The scripts were designed to be used for a softlink and for the Hightway model specifically and very limited in nature. <br />
+
 ##### Docker-related:<br />
 ###### BEAM
 docker/beam/Dockerfile: This is the docker build script that docker uses.<br />
