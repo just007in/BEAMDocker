@@ -1,6 +1,60 @@
 #!/usr/bin/env bash
 if [ "$#" -ne 1 ]; then
     echo "You must enter exactly 1 command line arguments"
+    exit
 fi
 name=$1
 echo "Your scenario name is $name"
+
+echo "For now, this script assumes the correct files are available in folder called $name in the working directory"
+
+#echo "Backing up original scenario files as ${name}_bak"
+#cp -r ${name} ${name}_bak
+
+mkdir -p "test/input/$name/conversion-input"
+mkdir -p "test/input/$name/calibration"
+mkdir -p "test/input/$name/r5"
+cp -a "${name}/." "test/input/$name/conversion-input/"
+
+docker run -d -t -w /home/beamuser/beam --env MAXRAM=4g --name BeamConvert beam
+
+docker cp "test/input/$name" BeamConvert:/home/beamuser/beam/test/input/
+docker exec -it BeamConvert ./gradlew -w matsimConversion -PconfPath="['/home/beamuser/beam/test/input/$name/${name}.conf']"
+
+docker cp BeamConvert:"/home/beamuser/beam/test/input/$name" test/input/
+
+docker stop BeamConvert
+docker rm BeamConvert
+
+if [ "$(ls -A test/input/${name}/r5)" ]
+then
+    echo "pbf file already in r5 folder"
+else
+    echo "Copying pbf file from conversion input into r5 folder"
+    cp test/input/$name/conversion-input/*.pbf test/input/$name/r5/
+fi
+
+if test -f "test/input/$name/rideHailFleet.csv"; then
+    echo "rideHailFleet.csv exists"
+else
+    echo "rideHailFleet.csv does not exist. Consider creating one or copying an empty one"
+fi
+
+if test -f "test/input/$name/calibration/benchmark.csv"; then
+    echo "calibration/benchmark.csv exists"
+else
+    echo "calibration/benchmark.csv does not exist. Consider creating one"
+fi
+
+if [ $(cat "test/input/$name/vehicleTypes.csv" | grep -E 'vehicleTypeId' | awk -F"," '{print NF-1}') -ne 21 ]; then
+    echo "vehicleTypes.csv is missing certain data columns"
+fi
+
+if [ $(cat "test/input/$name/vehicleTypes.csv" | grep -E 'BODY-TYPE-DEFAULT') ]; then
+    echo "vehicleTypes.csv has BODY-TYPE-DEFAULT"
+else
+    echo "vehicleTypes.csv is missing BODY-TYPE-DEFAULT"
+fi
+
+echo "Converted scenario in test/input/$name"
+echo "If the converted scenario is missing files or lacks information, you need to add them"

@@ -1,2 +1,3 @@
 output/
 docker/conversion-tools/JOSM
+test/

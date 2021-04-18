@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+if [ "$#" -ne 1 ]; then
+    echo "You must enter exactly 1 command line arguments"
+    exit
+fi
+name=$1
+echo "Your scenario name is $name"
+echo "This script assumes $name is located in the relative path test/input/"
+
+docker run -d -t -w /home/beamuser/beam --env MAXRAM=4g --name BeamRun beam
+
+docker cp test/input/$name BeamRun:/home/beamuser/beam/test/input/
+docker exec -it BeamRun ./gradlew -a :run -PappArgs="['--config','test/input/$name/${name}.conf']"
+docker cp BeamRun:/home/beamuser/beam/output .
+docker stop BeamRun
+docker rm BeamRun
